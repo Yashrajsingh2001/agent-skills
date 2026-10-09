@@ -11,24 +11,21 @@ A collection of reusable skills for AI coding agents (Bob, Claude Code, Cursor, 
 
 ## Installation
 
-Install a single skill globally using the [skills CLI](https://skills.sh):
+Install a single skill using the [skills CLI](https://skills.sh):
 
 ```bash
 # commit-helper
-npx skills@latest add \
-  https://github.com/Yashrajsingh2001/agent-skills/tree/main/skills/commit-helper \
-  -g -a bob
+npx skills@latest add https://github.com/Yashrajsingh2001/agent-skills --skill commit-helper -a bob -y
 
 # pr-helper
-npx skills@latest add \
-  https://github.com/Yashrajsingh2001/agent-skills/tree/main/skills/pr-helper \
-  -g -a bob
+npx skills@latest add https://github.com/Yashrajsingh2001/agent-skills --skill pr-helper -a bob -y
 ```
 
-Or install the whole collection:
+Install globally (available across all projects):
 
 ```bash
-npx skills@latest add Yashrajsingh2001/agent-skills -g -a bob
+npx skills@latest add https://github.com/Yashrajsingh2001/agent-skills --skill commit-helper -g -a bob -y
+npx skills@latest add https://github.com/Yashrajsingh2001/agent-skills --skill pr-helper -g -a bob -y
 ```
 
 ## Verify installation
